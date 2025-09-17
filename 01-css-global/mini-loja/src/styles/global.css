@@ -372,22 +372,20 @@ body {
   box-shadow: var(--shadow-lg);
   color: var(--text-primary);
   z-index: 100;
-
-  display: none; /* inicia fechado */
   opacity: 0;
   transform: translateY(-10px);
   transition: opacity 0.2s ease, transform 0.2s ease;
-
-  /* Flexbox para empurrar botão pro final */
   display: flex;
   flex-direction: column;
+  pointer-events: none;
 }
 
 .cart-modal.open {
-  display: flex;
   opacity: 1;
   transform: translateY(0);
+  pointer-events: auto;
 }
+
 
 .cart-modal-title {
   margin-bottom: var(--spacing-sm);
