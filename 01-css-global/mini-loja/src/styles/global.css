@@ -34,7 +34,7 @@ body {
   padding: var(--spacing-md) var(--spacing-2xl);
   transition: background-color 200ms ease, color 200ms ease;
   box-shadow: var(--shadow);
-  position: sticky;
+  position: fixed;
   top: 0;
   z-index: 100;
 }
@@ -106,6 +106,7 @@ body {
   justify-content: center;
   align-items: center;
   padding: var(--spacing-2xl);
+  margin-top: 4.5rem;
 }
 
 /* ============================= */
@@ -449,6 +450,7 @@ body {
   
   .main-content {
     padding: var(--spacing-lg);
+    margin-top: 7rem;
   }
   
   .products-grid {
@@ -466,6 +468,14 @@ body {
     flex-direction: column;
     gap: var(--spacing-md);
     padding: var(--spacing-md);
+  }
+
+  .cart-modal {
+    right: -106px;
+  }
+
+  .main-content {
+    margin-top: 10rem;
   }
   
   .products-grid {

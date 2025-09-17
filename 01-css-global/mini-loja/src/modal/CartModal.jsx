@@ -11,7 +11,7 @@ function CartModal({ isOpen }) {
       {cartItems.length === 0 ? (
         <p className="cart-modal-empty">Seu carrinho está vazio.</p>
       ) : (
-        <>
+        <div className="cart-modal-wrapper">
           <ul className="cart-modal-list">
             {cartItems.map((item, index) => (
               <li key={index} className="cart-modal-item">
@@ -24,7 +24,7 @@ function CartModal({ isOpen }) {
           <button onClick={clearCart} className="cart-modal-clear">
             Limpar Carrinho
           </button>
-        </>
+        </div>
       )}
     </div>
   );
